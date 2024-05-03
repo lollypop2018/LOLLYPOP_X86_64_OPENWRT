@@ -15,4 +15,9 @@
 
 # Add a feed source
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git diskman https://github.com/jjm2473/luci-app-diskman.git' >>feeds.conf.default
+echo 'src-git oaf https://github.com/jjm2473/OpenAppFilter.git' >>feeds.conf.default
+echo 'src-git linkease_nas https://github.com/linkease/nas-packages.git' >>feeds.conf.default
+echo 'src-git linkease_nas_luci https://github.com/linkease/nas-packages-luci.git' >>feeds.conf.default
+echo 'src-git jjm2473_apps https://github.com/jjm2473/openwrt-apps.git' >>feeds.conf.default
+echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
