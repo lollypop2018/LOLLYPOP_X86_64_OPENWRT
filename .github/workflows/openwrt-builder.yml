@@ -33,8 +33,8 @@ env:
 jobs:
   build:
     runs-on: ubuntu-22.04
-
-   - name: Check Server Performance
+     steps:
+     - name: Check Server Performance
       run: |
         echo "警告⚠"
         echo "分配的服务器性能有限，若选择的插件过多，务必注意CPU性能！"
@@ -48,10 +48,7 @@ jobs:
         echo -e "$(sudo lshw -short -C memory | grep GiB)\n"
         echo "--------------------------硬盘信息--------------------------"
         echo "硬盘数量: $(ls /dev/sd* | grep -v [1-9] | wc -l)" && df -hT
-
-    
-
-    steps:
+        
     - name: Checkout
       uses: actions/checkout@main
 
