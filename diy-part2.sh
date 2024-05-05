@@ -25,3 +25,5 @@ sed -i 's/OpenWrt/LOLLYPOP-Router/g' package/base-files/files/bin/config_generat
 # CONFIG_PACKAGE_luci-app-adguardhome=y
 # CONFIG_PACKAGE_luci-app-openclash=y
 # ' >> .config
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
