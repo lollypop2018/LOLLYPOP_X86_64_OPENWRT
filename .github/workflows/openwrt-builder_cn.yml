@@ -224,7 +224,7 @@ jobs:
          
 
     - name: 自动发布固件到 release
-      uses: softprops/action-gh-release@v1
+      uses: ncipollo/release-action@v1
       if: steps.tag.outputs.status == 'success' && !cancelled()
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
